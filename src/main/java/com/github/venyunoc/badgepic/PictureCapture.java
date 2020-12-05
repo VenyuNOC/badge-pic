@@ -5,11 +5,11 @@
  */
 package com.github.venyunoc.badgepic;
 
-import java.io.IOException;
-import java.io.InputStream;
+import com.github.venyunoc.badgepic.services.ImageWriterService;
+import com.github.venyunoc.badgepic.services.ImageDataService;
+import com.github.venyunoc.badgepic.services.BioDataService;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.Properties;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -49,7 +49,7 @@ public class PictureCapture {
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(() -> {
-            new UI(imageDataService, imageWriterService, bioDataService).setVisible(true);
+            new GUI(imageDataService, imageWriterService, bioDataService).setVisible(true);
         });
     }
 }

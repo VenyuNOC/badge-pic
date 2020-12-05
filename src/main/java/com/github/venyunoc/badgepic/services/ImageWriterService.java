@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.github.venyunoc.badgepic;
+package com.github.venyunoc.badgepic.services;
 
 import java.awt.image.BufferedImage;
 import java.io.File;
